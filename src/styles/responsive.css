@@ -1,0 +1,59 @@
+*{
+    padding: 10px;
+}
+
+@media screen and (max-width: 1010px) {
+    .hero {
+        height: 80vh;
+        background-attachment: scroll;
+    }
+
+    .hero img {
+        background-size: cover;
+    }
+
+    .hero-text-container {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero {
+        flex-direction: column;
+        height: 30vh;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero img, .hero-text {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .hero-text {
+        font-size: 2em;
+    }
+
+    .service-item p {
+        font-size: 0.8em;
+    }
+
+    .service-section h3 {
+        font-size: 20px;
+    } 
+    
+    .size {
+        font-size: 15px;
+    }
+}
+
+ /* @media screen and (max-width: 1010px) {
+        
+    }
+
+    @media screen and (max-width: 500px) {
+        
+    }
+         */
+
+    

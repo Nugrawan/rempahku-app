@@ -1,0 +1,139 @@
+.app-bar {
+    background-color: #000000f1;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between; 
+    box-shadow: 0 0 2px rgb(255, 255, 255);
+}
+
+.title-bar {
+    font-family: cursive;
+    font-size: 15px;
+    margin: 5px 10px 0;
+    cursor: pointer;
+}
+
+.title-bar h1 {
+    color: #fef9ef;
+}
+
+.title-bar span {
+    color: #227c9d;
+}
+
+.header-menu {
+    color: #fef9ef;
+    display: none;
+}
+
+.navbar {
+    margin: 10px;
+    padding: 10px;
+    color: #fef9ef;
+}
+
+.nav-item {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav-item a {
+    color: #fef9ef;
+    margin: 0 10px;
+    font-family: georgia;
+    text-decoration: none;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.nav-helper {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .app-bar {
+        padding: 0;
+    }
+
+    .header-menu {
+        padding: 10px;
+        display: flex;
+        min-width: 44px;
+        min-height: 44px;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .title-bar h1 {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .header-menu:hover {
+        font-style: oblique;
+    }
+
+    .navbar {
+        background-color: #000000f1;
+        width: 50%;
+        position: absolute;
+        height: 100vh;
+        margin: 0;
+        right: -20px;
+
+        -webkit-transform: translate(300px, 0);
+        transform: translate(300px, 0);
+        transition: transform 0.5s ease;
+    }
+
+    .nav-item a {
+        font-size: medium;
+    }
+
+    .nav-list {
+        margin: 0;
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .nav-item {
+        margin: 0 10px;
+        padding: 10px;
+        display: list-item;
+        border-bottom: 1 solid white;
+        text-align: left;
+    }
+
+    .nav-helper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .toggle-back {
+        color: #fef9ef;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 30px;
+        margin-right: 25px;
+    }
+    .toggle-back:hover {
+        cursor: pointer;
+        color: #dbdbdb;
+    }
+
+    .app-bar h2 {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
